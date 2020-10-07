@@ -16,11 +16,12 @@ var arrow_position = [100, 100];
   //var imgURL = chrome.runtime.getURL("images/myimage.png");
   //document.getElementById("someImage").src = imgURL;
 
-var arrowdest = "images/arrowbutton.png";
+//var arrowdest = "images/arrowbutton.png";
 var arrow = document.createElement("img");
-arrow.src = chrome.extension.getURL(arrowdest);
-arrow.position = arrow_position;
-
+arrow.src = chrome.runtime.getURL("images/arrowbutton.png");
+//arrow.position = arrow_position;
+arrow.style.marginLeft = arrow_position[0] - 50;
+arrow.style.marginLeft = arrow_position[1] - 50;
 
 console.log(url);
 // location.replace(link);
